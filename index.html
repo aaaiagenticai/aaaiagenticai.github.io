@@ -35,21 +35,17 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
-* {
-  box-sizing: border-box;
+.container {
+    display: flex;
+    justify-content: space-between; /* Space between images */
+    align-items: center; /* Center images vertically */
+    max-width: 1200px; /* Optional: set a max width for the container */
+    margin: auto; /* Center the container on the page */
 }
 
-.column {
-  float: left;
-  width: 25.0%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.image {
+    width: 23%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 </style>
 </head>
@@ -281,20 +277,10 @@
 
       <div class="container">
         <!-- <div class="row justify-content-between"> -->
-		
-		<div class="row">
-		  <div class="column">
-			<img src="keynote-1.jpg" alt="keynote-1" style="width:100%">
-		  </div>
-		  <div class="column">
-			<img src="keynote-2.jpg" alt="keynote-2" style="width:100%">
-		  </div>
-		  <div class="column">
-			<img src="keynote-3.jpg" alt="keynote-3" style="width:100%">
-		  </div>
-		  <div class="column">
-			<img src="keynote-4.png" alt="keynote-4" style="width:100%">
-		  </div>
+		<img src="keynote-1.jpg" alt="keynote-1" class="image">
+		<img src="keynote-2.jpg" alt="keynote-2"  class="image">
+		<img src="keynote-3.jpg" alt="keynote-3"  class="image">
+		<img src="keynote-4.png" alt="keynote-4"  class="image">
 		</div>
 
           <!-- <div class="col-lg-5 d-flex align-items-center">
