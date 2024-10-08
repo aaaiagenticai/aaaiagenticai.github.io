@@ -53,10 +53,17 @@
     margin: 0;
 }
 
-li span {
+<!-- li span {
   position: relative;
   left: -10px;
-}
+} -->
+
+ul li {
+            list-style-type: none;
+            padding-left: 0;
+			list-style: none;
+			text-align: left
+        }
 
 </style>
 </head>
@@ -171,47 +178,60 @@ li span {
 	<div class="container section-title" data-aos="fade-up">
         <h2>About the Symposium</h2>
         
-		<p>AI systems have assisted research scientists in discovering new components under human supervision. This successful strategy helped researchers discover new things at a rapid pace. Due to human intervention, the scope of discovery is limited; however, the time is ripe to broaden the scope of discovery by allowing AI to develop novel and feasible ideas without inhibition. Along with developing novel ideas, the tools, metrics, and means to comprehend, quantify, and validate the generated ideas are essential.
+		<p align="left">AI systems have assisted research scientists in discovering new components under human supervision. This successful strategy helped researchers discover new things at a rapid pace. Due to human intervention, the scope of discovery is limited; however, the time is ripe to broaden the scope of discovery by allowing AI to develop novel and feasible ideas without inhibition. Along with developing novel ideas, the tools, metrics, and means to comprehend, quantify, and validate the generated ideas are essential.
 			  </p>
-		<p>The proposed spring symposium will offer a venue to report progress on Agentic AI systems for scientific discovery by welcoming and covering a wide range of topics, including (non-exclusively): </p>
+		<p align="left">The proposed spring symposium will offer a venue to report progress on Agentic AI systems for scientific discovery by welcoming and covering a wide range of topics, including (non-exclusively): </p>
 		
-		<p> <b> Agentic AI as Autonomous Scientists: </b> (1) Novel hypothesis generation, (2) Automatic comprehension, quantification and validation of generated hypothesis </p>
-		<p> <b> Automated AI: Agentic AI systems to achieve specific scientific goals: </b> (1) Adaptive Learning Systems (ALS), (2) Lifelong Learning Machines (L2M), (3) Automated scientific rule mining, knowledge extraction and representation, and workflow management  </p>
-		<p> <b> Creation of Scientific Agentic AI Systems: </b> (1) Requirements and guidelines to develop such systems, (2) Human-AI collaboration - interface for effective collaboration  </p>
-		<p> <b> Automatic Comprehension and Quantification of Agentic AI Systems: </b> (1) Characteristics of Agentic AI behavior, (2) Metrics for measuring autonomy and decision-making capabilities, (3) Metrics to improve contextual awareness in AI systems </p>
-		<p> <b> Validation of Agentic AI Systems: </b> (1) Agentic AI system with worst-case guarantees, (2) Diagnosing Agentic AI systems, (3) Agentic AI assurance -  robustness, reliability, accountability and trustworthiness  </p>
+		<ul>
+		<li><b> Agentic AI as Autonomous Scientists </b>
+		<ul>
+		<li>Novel hypothesis generation</li>
+		<li>Automatic comprehension, quantification and validation of generated hypothesis</li>
+		</ul>
 		
-			<!-- <div id="about_section">
-			  <ul>
-			  <li><span>AI as Autonomous Scientists: novel hypothesis generation, automatic comprehension, quantification and validation of generated hypothesis.</span></li>
-			  <li><span>Automated AI: Agentic AI systems to achieve specific scientific goals.</span></li>
-			  <ul>
-			  <li><span>Automated scientific rule mining</span></li>
-			  <li><span>Automated scientific knowledge extraction and representation</span></li>
-			  <li><span>Interactive scientific agent design</span></li>
-			  <li><span>Automated Scientific Workflow Management</span></li>
-			  <li><span>Automated Data Cleaning and Preprocessing</span></li>
-			  </ul>
-			  <li><span>Creation of Scientific Agentic AI systems: requirements, guidelines and validation processes to develop such systems.</span></li>
-			  <li><span>Automatic comprehension and quantification of Agentic AI system outputs.</span></li>
-			  <li><span>Validation of Agentic AI systems: metrics, evaluation guidelines.</span></li>
-			  <ul>
-			  <li><span>Agentic AI system with worst-case guarantees</span></li>
-			  <li><span>Diagnosing Agentic AI systems</span></li>
-			  <li><span>Safety and Alignment of Agentic AI systems</span></li>
-			  <li><span>Ethical guarantees of Agentic AI systems</span></li>
-			  </ul>
-			  </ul>
-			</div> -->
-			<p>The proposed spring symposium will also cater to researchers and scientists from diverse disciplines, including (non-exclusively):</p>
-			<!-- <div id="about_section">
-			<ul> -->
-			<p>Researchers from traditionally concentrated fields such as physics, applied mathematics, biology, chemistry, material science, and psychology.</p>
-			<p>Researchers from other research disciplines such as natural language processing and data mining.</p>
-			<p>Applied researchers and engineers from diverse fields, including human-computer interaction, who can develop feasible Agentic AI systems.</p>
-			<!-- </ul>
-			</div> -->
-			<p>The symposium attendees will indulge in brainstorming sessions and panel discussions, offering diverse perspectives and feasible practices that can drive future research in Agentic AI.</p>
+		</li>
+		<li><b> Automated AI: Agentic AI systems to achieve specific scientific goals </b>
+		<ul>
+		<li>Adaptive Learning Systems (ALS)</li>
+		<li>Lifelong Learning Machines (L2M)</li>
+		<li>Automated scientific rule mining, knowledge extraction and representation, and workflow management</li>
+		</ul>
+		
+		</li>
+		<li><b> Creation of Scientific Agentic AI Systems </b>
+		<ul>
+		<li>Requirements and guidelines to develop such systems</li>
+		<li>Human-AI collaboration - interface for effective collaboration</li>
+		</ul>
+		
+		</li>
+		<li><b> Automatic Comprehension and Quantification of Agentic AI Systems </b>
+		<ul>
+		<li>Characteristics of Agentic AI behavior</li>
+		<li>Metrics for measuring autonomy and decision-making capabilities</li>
+		<li>Metrics to measure contextual awareness in AI systems</li>
+		</ul>
+		
+		</li>
+		<li><b> Validation of Agentic AI Systems </b>
+		<ul>
+		<li>Agentic AI system with worst-case guarantees</li>
+		<li>Diagnosing Agentic AI systems</li>
+		<li>Agentic AI assurance -  robustness, reliability, accountability and trustworthiness</li>
+		</ul>
+		
+		</li>
+		</ul>
+		
+			<p align="left">The proposed spring symposium will also cater to researchers and scientists from diverse disciplines, including (non-exclusively):</p>
+			<div id="about_section">
+			<ul>
+			<li><i>Researchers from traditionally concentrated fields such as physics, applied mathematics, biology, chemistry, material science, and psychology.</i></li>
+			<li><i>Researchers from other research disciplines such as natural language processing and data mining.</i></li>
+			<li><i>Applied researchers and engineers from diverse fields, including human-computer interaction, who can develop feasible Agentic AI systems.</i></li>
+			</ul>
+			</div>
+			<p align="left">The symposium attendees will indulge in brainstorming sessions and panel discussions, offering diverse perspectives and feasible practices that can drive future research in Agentic AI.</p>
             
 
      </div>
