@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="wilih=device-wilih, initial-scale=1.0" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Home</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -22,7 +22,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bunule.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -34,8 +34,17 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
   <style>
 .container_image {
+    display: flex;
+    justify-content: space-between; /* Space between images */
+    align-items: center; /* Center images vertically */
+    max-width: 1200px; /* Optional: set a max width for the container */
+    margin: auto; /* Center the container on the page */
+}
+
+.container_sponsor {
     display: flex;
     justify-content: space-between; /* Space between images */
     align-items: center; /* Center images vertically */
@@ -64,8 +73,56 @@ ul li {
 			list-style: none;
 			text-align: left
         }
-
+		
+.container_six {
+            display: grid;
+            grid-template-columns: repeat(5, 225px); /* 3 columns */
+            gap: 20px; /* Space between images */
+            <!-- margin: 100px; /* Overall margin */ -->
+			margin-top: 5px;
+			margin-bottom: 5px;
+		    margin-right: 50px;
+		    margin-left: 50px;
+			justify-content: center;
+        }
+.container_eight {
+            display: grid;
+            grid-template-columns: repeat(4, 225px); /* 3 columns */
+            gap: 40px; /* Space between images */
+            <!-- margin: 400px; /* Overall margin */ -->
+			margin-top: 5px;
+			margin-bottom: 5px;
+		    margin-right: 50px;
+		    margin-left: 50px;
+			justify-content: center;
+        }
+.container_one {
+            display: grid;
+            grid-template-columns: repeat(1, 225px); /* 3 columns */
+            gap: 40px; /* Space between images */
+            <!-- margin: 400px; /* Overall margin */ -->
+			margin-top: 5px;
+			margin-bottom: 5px;
+		    margin-right: 600px;
+		    margin-left: 600px;
+			justify-content: center;
+        }
+        .image-box {
+            text-align: center; /* Center the text */
+        }
+        .caption {
+            font-size: 16px; /* Adjust font size */
+            color: #555; /* Set color */
+        }
+        img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+.table {display:table; margin-right: 100px; margin-left: 100px;}
+.row { display:table-row;}
+.cell {display:table-cell;width:10px;gap:5px;text-align: center;}
 </style>
+  
 </head>
 
 <body class="index-page">
@@ -75,7 +132,7 @@ ul li {
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">AgenticAI</h1>
+        <h1 class="sitename">Agentic AI for Scientific Discovery</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -86,14 +143,12 @@ ul li {
           <li><a href="index.html#speakers">Speakers</a></li>
           <li><a href="index.html#schedule">Schedule</a></li>
 		  <li><a href="index.html#organizers">Organizers</a></li>
+		  <li><a href="index.html#sponsors">Sponsors</a></li>
           <li><a href="index.html#contact">Contact</a></li>
           <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Call for Papers</a></li>
-              <li><a href="#">Event Venue</a></li>
               <li><a href="#">Registration</a></li>
-              <li><a href="#">Committee</a></li>
-			  <li><a href="#">Flyer</a></li>
             </ul>
           </li>
         </ul>
@@ -114,10 +169,10 @@ ul li {
       </div>
       <div class="container text-center">
         <div class="d-flex flex-column justify-content-center align-items-center">
-          <h1 data-aos="fade-up">Agentic AI Symposium 2025</h1>
-          <p data-aos="fade-up" data-aos-delay="100">March 31-April 2, 2025 | San Francisco Airport Marriott Waterfront | Burlingame, CA, USA<br></p>
+          <h1 data-aos="fade-up">Towards Agentic AI for Science: Hypothesis Generation, Comprehension, Quantification, and Validation  (ICLR, 2025)</h1>
+          <p data-aos="fade-up" data-aos-delay="100">April 24-28, 2025 | Singapore Expo<br></p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Gallery</a>
+            <a href="#speakers" class="btn-getstarted">Gallery</a>
             <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
           </div>
           <!-- <img src="assets/img/hero-services-img.webp" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300"> -->
@@ -169,147 +224,67 @@ ul li {
       </div>
 
     </section> --> <!-- /Featured Services Section -->
-	
-	
 
     <!-- About Section -->
     <section id="about" class="about section">
-	
-	<div class="container section-title" data-aos="fade-up">
-        <h2>About the Symposium</h2>
+
+      <div class="container">
+
+        <h2>About the Workshop</h2>
         
-		<p align="left">AI systems have assisted research scientists in discovering new components under human supervision. This successful strategy helped researchers discover new things at a rapid pace. Due to human intervention, the scope of discovery is limited; however, the time is ripe to broaden the scope of discovery by allowing AI to develop novel and feasible ideas without inhibition. Along with developing novel ideas, the tools, metrics, and means to comprehend, quantify, and validate the generated ideas are essential.
+		<p align="left"> Our mission is to foster interdisciplinary collaboration to develop fully autonomous AI systems, addressing challenges like benchmark datasets, human-AI collaboration, robust tools and methods for validating AI outputs, and trustworthiness. By tackling these issues, we can unlock AI's transformative potential in research. In this workshop, themed <b>Agentic AI for Science</b>, we will explore these critical topics and welcome diverse perspectives. We will focus on integrating agentic AI systems to enhance scientific discovery while upholding rigorous standards. For AI to contribute effectively, it must <b>generate novel hypotheses, comprehend their applications, quantify testing resources, and validate feasibility through well-designed experiments</b>. This workshop serves as a vital forum for collaboration and knowledge-sharing aimed at redefining the landscape of scientific discovery. This workshop aims to address four main research thrusts to propel future research, including (non-exclusively):  
 			  </p>
-		<p align="left">The proposed spring symposium will offer a venue to report progress on Agentic AI systems for scientific discovery by welcoming and covering a wide range of topics, including (non-exclusively): </p>
-		
+		<!-- <p align="left">This workshop invites insights from scientists and technology developers to gain a clearer understanding of how to address the factors that necessitate human involvement in AI systems. In this regard, we aim to thoroughly examine several important issues by welcoming and covering a wide range of topics, including (non-exclusively): </p>
+		 -->
+		<p><b>Thrust 1. Design and development of agentic AI systems for scientific discovery.</b> The emergence of agentic AI, powered by foundation models—particularly generative models—opens up unprecedented opportunities for scientific discovery. These systems can potentially revolutionize various aspects of the scientific process, including hypothesis generation, comprehension of complex scientific phenomena, quantification, and validation. Designing and developing effective agentic AI systems for scientific discovery is both exciting and non-trivial. Pioneering work in this field has already demonstrated the promise of leveraging scientific tools, agents, and knowledge graphs. Notable examples include ChemCrow, which showcases the potential of AI in chemistry; Crispr-GPT, which applies AI to genetic engineering; and SciAgents , which illustrates the power of multi-agent systems in scientific discovery. These groundbreaking studies highlight the transformative potential of agentic AI in accelerating scientific progress and opening new avenues for research.  Key research topics in this thrust include (but not limited to):
+		 </p>
 		<ul>
-		<li><b> Agentic AI as Autonomous Scientists </b>
-		<ul>
-		<li>Novel hypothesis generation</li>
-		<li>Automatic comprehension, quantification and validation of generated hypothesis</li>
+		<li><i>Developing scientific foundation models:</i>  Tailoring general foundation models specifically for various scientific fields to enhance relevance and accuracy.</li>
+		<li><i>Effective scientific tool augmentation:</i> Enhancing existing scientific tools and methodologies with agentic AI capabilities.</li>
+		<li><i>Multi-agent decomposition design:</i> Developing frameworks for scientific hypothesis generation using multiple specialized AI agents.</li>
+		<li><i>Human-in-the-loop agentic systems:</i> Improving reliability and interpretability of AI-driven scientific discoveries through strategic human intervention.</li>
 		</ul>
 		
-		</li>
-		<li><b> Automated AI: Agentic AI systems to achieve specific scientific goals </b>
+		<p><b>Thrust 2. Theoretical foundation for scientific agentic AI.</b> Developing agentic scientific AI requires methods to quantify the predictions and performance of these systems, as well as to validate the scientific hypotheses they generate. A thorough investigation of agentic scientific AI systems also demands solid theoretical foundations and tools to ensure guarantees on their behavior. To analyze and evaluate such systems, we will incorporate theoretical tools in modeling, logical reasoning, model validation and diagnosis, interpretable AI, and other general methods that can provide guarantees on agentic systems. Key topics in this area include, but are not limited to, the following:
+		 </p>
 		<ul>
-		<li>Adaptive Learning Systems (ALS)</li>
-		<li>Lifelong Learning Machines (L2M)</li>
-		<li>Automated scientific rule mining, knowledge extraction and representation, and workflow management</li>
+		<li><i>Theoretical foundation:</i>  Statistical models and theories of agentic scientific AI, such as theoretical studies on in-context learning, multi-agent communications, game theory, physics-informed hard and soft optimization constraints, and neural operators.</li>
+		<li><i>Logic reasoning:</i> Inductive, deductive, and abductive reasoning; Bayesian reasoning and probabilistic programming; neural-symbolic approaches.</li>
+		<li><i>Model quantification, validation, diagnosis:</i> Theory-driven metrics for quantifying AI system performance; self-evaluation of LLMs; data valuation and data-centric AI; diagnostics for data, architecture, and training processes; creation of standardized benchmarks for evaluating the validity of scientific hypothesis generation; scientific facts and hallucination.</li>
+		<li><i>Interpretable AI:</i> Approaches for explaining agentic AI system behaviors; quantifying trust, safety, and transparency; mechanistic interpretability.</li>
 		</ul>
 		
-		</li>
-		<li><b> Creation of Scientific Agentic AI Systems </b>
+		<p><b>Thrust 3. Practical application of scientific agentic AI.</b> Deploying agentic AI systems in practical scientific research across diverse domains presents numerous challenges, particularly due to the need for domain-specific adaptation such as the unique data formats and model constraints of each scientific field. Bias in training data poses a significant risk, especially in sensitive domains like medicine. Trustworthiness and explainability are essential for scientists to confidently integrate AI-generated hypotheses and solutions into their research. Furthermore, ethical considerations arise when AI systems potentially automate research decisions that may impact public health, policy, or environmental outcomes, underscoring the importance of responsible AI deployment in science.
+		 </p>
 		<ul>
-		<li>Requirements and guidelines to develop such systems</li>
-		<li>Human-AI collaboration - interface for effective collaboration</li>
+		<li><i>Domain-specific model adaptation:</i>  Adapting agentic AI models to handle domain-specific data formats, workflows, and tools across various scientific fields; transfer learning and data-efficient fine-tuning.</li>
+		<li><i>Bias detection and mitigation:</i> Identifying and mitigating bias in training data, model design and outputs; fairness-aware AI systems for sensitive domains like healthcare and social science.</li>
+		<li><i>Robustness, trustworthiness and explainability:</i> Methods for improving the transparency and explainability of agentic AI systems in scientific research; uncertainty interpretation and quantification.</li>
+		<li>Ethical considerations and responsible use of agentic AI in sensitive research areas; development of AI governance models to ensure accountability and human oversight in automated scientific workflows.</li>
 		</ul>
 		
-		</li>
-		<li><b> Automatic Comprehension and Quantification of Agentic AI Systems </b>
+		<p><b>Thrust 4. Open problems and challenges on scientific agentic AI.</b> Despite the promising potential of agentic AI in scientific discovery, many open problems and challenges remain to be addressed. These may include:
+		 </p>
 		<ul>
-		<li>Characteristics of Agentic AI behavior</li>
-		<li>Metrics for measuring autonomy and decision-making capabilities</li>
-		<li>Metrics to measure contextual awareness in AI systems</li>
+		<li>Automatic curation of domain-specific scientific domains and integration of the knowledge into agentic AI systems.</li>
+		<li>Advanced mechanisms of multi-agent collaboration in scientific discovery, with considerations of their scalability and computational efficiency.</li>
+		<li>Continual evolution and learning of agentic AI systems; Mechanisms for updating models and improving performance based on experimental results, new data and discoveries.</li>
+		<li>Validation and reproducibility of results generated by agentic AI systems.</li>
 		</ul>
+	
 		
-		</li>
-		<li><b> Validation of Agentic AI Systems </b>
-		<ul>
-		<li>Agentic AI system with worst-case guarantees</li>
-		<li>Diagnosing Agentic AI systems</li>
-		<li>Agentic AI assurance -  robustness, reliability, accountability and trustworthiness</li>
-		</ul>
 		
-		</li>
-		</ul>
-		
-			<p align="left">The proposed spring symposium will also cater to researchers and scientists from diverse disciplines, including (non-exclusively):</p>
+			<!-- <p align="left">The rapid advancement of agentic AI systems necessitates the establishment of benchmark datasets, evaluation metrics, and guidelines. Thus, in addition to the previously mentioned topics, we invite research contributions in the following areas</p>
 			<div id="about_section">
 			<ul>
-			<li><i>Researchers from traditionally concentrated fields such as physics, applied mathematics, biology, chemistry, material science, and psychology.</i></li>
-			<li><i>Researchers from other research disciplines such as natural language processing and data mining.</i></li>
-			<li><i>Applied researchers and engineers from diverse fields, including human-computer interaction, who can develop feasible Agentic AI systems.</i></li>
+			<li><b>Dataset:</b> Our proposed dataset track will accept datasets that support  scientific discovery involving agentic AI systems.</li>
+			<li><b>Evaluation:</b> We welcome submissions of innovative evaluation methods or metrics aimed at assessing the performance of agentic AI systems. These metrics may evaluate AI system performance across various stages of knowledge-driven autonomous scientific research, including the generation, understanding, quantification, and validation of scientific hypotheses.</li>
 			</ul>
-			</div>
-			<p align="left">The symposium attendees will indulge in brainstorming sessions and panel discussions, offering diverse perspectives and feasible practices that can drive future research in Agentic AI.</p>
+			</div> -->
             
 
      </div>
-	  </section>
-
-<!--       <div class="container">
-
-        <div class="row gy-10">
-
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100"> -->
-            <!-- <p class="who-we-are">About the Symposium</p> -->
-<!--             <h3>About the Symposium</h3>
-            <p>
-              AI systems have assisted research scientists in discovering new components under human supervision. This successful strategy helped researchers discover new things at a rapid pace. Due to human intervention, the scope of discovery is limited; however, the time is ripe to broaden the scope of discovery by allowing AI to develop novel and feasible ideas without inhibition. Along with developing novel ideas, the tools, metrics, and means to comprehend, quantify, and validate the generated ideas are essential. The proposed spring symposium will offer a venue to report progress on Agentic AI systems for scientific discovery by welcoming and covering a wide range of topics, including (non-exclusively):
-			  </p>
-			  <div>
-			  <ul>
-			  <li>AI as Autonomous Scientists: novel hypothesis generation, automatic comprehension, quantification and validation of generated hypothesis.</li>
-			  <li>Automated AI: Agentic AI systems to achieve specific scientific goals.</li>
-			  <ul>
-			  <li>Automated scientific rule mining</li>
-			  <li>Automated scientific knowledge extraction and representation</li>
-			  <li>Interactive scientific agent design</li>
-			  <li>Automated Scientific Workflow Management</li>
-			  <li>Automated Data Cleaning and Preprocessing</li>
-			  </ul>
-			  <li>Creation of Scientific Agentic AI systems: requirements, guidelines and validation processes to develop such systems.</li>
-			  <li>Automatic comprehension and quantification of Agentic AI system outputs.</li>
-			  <li>Validation of Agentic AI systems: metrics, evaluation guidelines.</li>
-			  <ul>
-			  <li>Agentic AI system with worst-case guarantees</li>
-			  <li>Diagnosing Agentic AI systems</li>
-			  <li>Safety and Alignment of Agentic AI systems</li>
-			  <li>Ethical guarantees of Agentic AI systems</li>
-			  </ul>
-			  </ul>
-			</div>
-			<p>The proposed spring symposium will also cater to researchers and scientists from diverse disciplines, including (non-exclusively):</p>
-			<div>
-			<ul>
-			<li>Researchers from traditionally concentrated fields such as physics, applied mathematics, biology, chemistry, material science, and psychology.</li>
-			<li>Researchers from other research disciplines such as natural language processing and data mining.</li>
-			<li>Applied researchers and engineers from diverse fields, including human-computer interaction, who can develop feasible Agentic AI systems.</li>
-			</ul>
-			</div>
-			<p>The symposium attendees will indulge in brainstorming sessions and panel discussions, offering diverse perspectives and feasible practices that can drive future research in Agentic AI.</p>
-             --><!-- <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul> -->
-            <!-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
-          <!-- </div> -->
-
-          <!-- <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-              <div class="col-lg-6">
-                <img src="assets/img/about-company-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="row gy-4">
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-lg-12">
-                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div> -->
-
-<!--         </div>
-		</div>
-
-      </div>
-    </section> --><!-- /About Section -->
+    </section><!-- /About Section -->
 
     <!-- Clients Section -->
     <!-- <section id="clients" class="clients section">
@@ -354,16 +329,60 @@ ul li {
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Keynote Speakers</h2>
-        <p>We are honored to have invited four distinguished keynote speakers.</p>
+        <p>We are honored to have invited five distinguished keynote speakers.</p>
       </div><!-- End Section Title -->
 
-      <div class="container_image">
+     <!--  <div class="container_image"> -->
         <!-- <div class="row justify-content-between"> -->
-		<img src="assets/img/keynote-1.jpg" alt="Dr. Michael W. Mahoney" class="image">
+		<!-- <img src="assets/img/keynote-1.jpg" alt="Dr. Michael W. Mahoney" class="image">
 		<img src="assets/img/keynote-2.jpg" alt="Dr. Su-In Lee"  class="image">
 		<img src="assets/img/keynote-3.jpg" alt="Dr. Marinka Zitnik"  class="image">
 		<img src="assets/img/keynote-4.jpg" alt="Dr. Markus J. Buehler"  class="image">
 		</div>
+	</div> -->
+	<div class="container_six">
+    <div class="image-box">
+        <img src="assets/img/keynote-1.jpg" alt="Dr. Michael W. Mahoney">
+        <div class="caption">
+            <p>Dr. Michael W. Mahoney</p>
+            <p><b>Department of Statistics, University of California, Berkeley</b></p>
+			<p><b>Website:</b> <a href="https://www.stat.berkeley.edu/~mmahoney/">website_link</a></p>
+        </div>
+    </div>
+	<div class="image-box">
+        <img src="assets/img/sanmi_koyejo.jpg" alt="Dr. Sanmi Koyejo">
+        <div class="caption">
+            <p>Dr. Sanmi Koyejo</p>
+            <p><b>Department of Computer Science, Stanford University</b></p>
+			<p><b>Website:</b> <a href="https://cs.stanford.edu/~sanmi/">website_link</a></p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/keynote-2.jpg" alt="Dr. Su-In Lee">
+        <div class="caption">
+            <p>Dr. Su-In Lee</p>
+            <p><b>Department of Computer Science, University of Washington</b></p>
+			<p><b>Website:</b> <a href="https://aims.cs.washington.edu/su-in-lee/">website_link</a></p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/keynote-3.jpg" alt="Dr. Marinka Zitnik">
+        <div class="caption">
+            <p>Dr. Marinka Zitnik</p>
+            <p><b>Department of Biomedical Informatics, Harvard Medical School</b></p>
+			<p><b>Website:</b> <a href="https://kempnerinstitute.harvard.edu/people/our-people/marinka-zitnik/">website_link</a></p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/keynote-4.jpg" alt="Dr. Markus J. Buehler">
+        <div class="caption">
+            <p>Dr. Markus J. Buehler</p>
+            <p><b>Department of Civil and Environmental Engineering, Massachusetts Institute of Technology</b></p>
+			<p><b>Website:</b> <a href="https://cee.mit.edu/people_individual/markus-j-buehler/">website_link</a></p>
+        </div>
+    </div>
+</div>
+	</section>
 
           <!-- <div class="col-lg-5 d-flex align-items-center">
 
@@ -408,30 +427,9 @@ ul li {
 
           <!-- </div> -->
 
-          <!-- <div class="col-lg-6">
+      <!-- </div>
 
-            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="tab-pane fade active show" id="features-tab-1">
-                <img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
-              </div><!-- End Tab Content Item -->
-
-              <!-- <div class="tab-pane fade" id="features-tab-2">
-                <img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
-              </div> --><!-- End Tab Content Item -->
-
-              <!-- <div class="tab-pane fade" id="features-tab-3">
-                <img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
-              </div> --><!-- End Tab Content Item -->
-            <!-- </div>
-
-          </div> -->
-
-        <!-- </div> -->
-
-      </div>
-
-    </section><!-- /Features Section -->
+    </section> --><!-- /Features Section -->
 
     <!-- Features Details Section -->
     <!-- <section id="features-details" class="features-details section">
@@ -493,25 +491,9 @@ ul li {
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Event Schedule</h2>
-        <p>The event is scheduled for March 31-April 2, 2025 </p>
+        <p>The event is scheduled to take place during the ICLR conference from April 24 to 28, 2025 </p>
       </div><!-- End Section Title -->
 
-      <!-- <div class="container">
-
-        <div class="row g-10"> -->
-		
-		
-
-          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative"> -->
-              <!-- <i class="bi bi-activity icon"></i> -->
-              <!-- <div>
-                <h3>Reception</h3>
-                <p>If you are registered, please take your name tags from the registration desk. Onsite registration is not available. Coffee and tea are available nearby.</p>
-                 --><!-- <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a> -->
-              <!-- </div>
-            </div>
-          </div> --><!-- End Service Item -->
 
           <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
@@ -573,20 +555,6 @@ ul li {
       </div> -->
 
     </section><!-- /Services Section -->
-	
-	<section id="organizers" class="schedule section light-background">
-	<div class="container section-title" data-aos="fade-up">
-        <h2>ORGANIZERS</h2>
-        
-		<p>Dr. Dawei Zhou / Virginia Tech / zhoud@vt.edu / https://sites.google.com/view/dawei-zhou/home</p>
-		<p>Dr. Lifu Huang /  UC Davis / lfuhuang@ucdavis.edu / https://wilburone.github.io/</p>
-		<p>Dr. Qingyun Wu / Pennsylvania State University, / qingyun.wu@psu.edu / https://qingyun-wu.github.io/</p>
-		<p>Dr. Yujun Yan / Dartmouth College / yujun.yan@dartmouth.edu / https://sites.google.com/umich.edu/yujunyan/home</p>
-		<p>Dr. Yaoqing Yang / Dartmouth College / yaoqing.yang@dartmouth.edu / https://sites.google.com/site/yangyaoqingcmu/</p>
-		<p>Dr. James Zou / Stanford University / jamesz@stanford.edu / https://www.james-zou.com/</p>
-
-      </div>
-	</section>
 
     <!-- More Features Section -->
     <!-- <section id="more-features" class="more-features section">
@@ -646,14 +614,271 @@ ul li {
       </div>
 
     </section> --><!-- /More Features Section -->
+	
+	<section id="organizers" class="schedule section light-background">
+	<div class="container section-title" data-aos="fade-up">
+        <h2>ORGANIZERS</h2>
+        <!-- <p>Dr. Danai Koutra / University of Michigan / koutra@umich.edu / https://web.eecs.umich.edu/~dkoutra</p>
+		<p>Dr. Lifu Huang /  UC Davis / lfuhuang@ucdavis.edu / https://wilburone.github.io</p>
+		<p>Dr. Temiloluwa Prioleau / Dartmouth College / tprioleau@dartmouth.edu / https://www.t-prioleau.com</p>
+		<p>Dr. Qingyun Wu / Pennsylvania State University, / qingyun.wu@psu.edu / https://qingyun-wu.github.io</p>
+		<p>Dr. Yujun Yan / Dartmouth College / yujun.yan@dartmouth.edu / https://sites.google.com/umich.edu/yujunyan/home</p>
+		<p>Dr. Yaoqing Yang / Dartmouth College / yaoqing.yang@dartmouth.edu / https://sites.google.com/site/yangyaoqingcmu</p>
+		<p>Dr. James Zou / Stanford University / jamesz@stanford.edu / https://www.james-zou.com/</p>
+		<p>Dr. Dawei Zhou / Virginia Tech / zhoud@vt.edu / https://sites.google.com/view/dawei-zhou/home</p> -->
+		
+
+      </div>
+	  
+	<div class="container_eight">
+	<div class="image-box">
+        <img src="assets/img/danai_koutra.jpg" alt="Dr. Danai Koutra">
+        <div class="caption">
+            <p>Dr. Danai Koutra</p>
+            <p><b>University of Michigan</b></p>
+			<p><b>Email:</b> koutra@umich.edu</p>
+			<p><b>Website:</b> <a href="https://web.eecs.umich.edu/~dkoutra">website_link</a></p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/lifu_huang.jpeg" alt="Dr. Lifu Huang">
+        <div class="caption">
+            <p>Dr. Lifu Huang</p>
+            <p><b>UC Davis</b></p>
+			<p><b>Email:</b> lfuhuang@ucdavis.edu</p>
+			<p><b>Website:</b> <a href="https://wilburone.github.io">website_link</a></p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/Temiloluwa_Prioleau.jpg" alt="Dr. Temiloluwa Prioleau">
+        <div class="caption">
+            <p>Dr. Temiloluwa Prioleau</p>
+            <p><b>Dartmouth College</b></p>
+			<p><b>Email:</b> tprioleau@dartmouth.edu</p>
+			<p><b>Website:</b> <a href="https://www.t-prioleau.com">website_link</a></p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/Qingyun_Wu.jpg" alt="Dr. Qingyun Wu">
+        <div class="caption">
+            <p>Dr. Qingyun Wu</p>
+            <p><b>Pennsylvania State University</b></p>
+			<p><b>Email:</b> qingyun.wu@psu.edu</p>
+			<p><b>Website:</b> <a href="https://qingyun-wu.github.io">website_link</a></p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/Yujun_Yan.jpg" alt="Dr. Yujun Yan">
+        <div class="caption">
+            <p>Dr. Yujun Yan</p>
+            <p><b>Dartmouth College</b></p>
+			<p><b>Email:</b> yujun.yan@dartmouth.edu</p>
+			<p><b>Website:</b> <a href="https://sites.google.com/umich.edu/yujunyan/home">website_link</a></p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/Yaoqing_Yang.jpg" alt="Dr. Yaoqing Yang">
+        <div class="caption">
+            <p>Dr. Yaoqing Yang</p>
+            <p><b>Dartmouth College</b></p>
+			<p><b>Email:</b> yaoqing.yang@dartmouth.edu</p>
+			<p><b>Website:</b> <a href="https://sites.google.com/site/yangyaoqingcmu">website_link</a></p>
+        </div>
+    </div>
+	<div class="image-box">
+        <img src="assets/img/James_Zou.jpg" alt="Dr. James Zou">
+        <div class="caption">
+            <p>Dr. James Zou</p>
+            <p><b>Stanford University</b></p>
+			<p><b>Email:</b> jamesz@stanford.edu</p>
+			<p><b>Website:</b> <a href="https://www.james-zou.com/">website_link</a></p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="assets/img/Dawei_Zhou.jpg" alt="Dr. Dawei Zhou">
+        <div class="caption">
+            <p>Dr. Dawei Zhou</p>
+            <p><b>Virginia Tech</b></p>
+			<p><b>Email:</b> zhoud@vt.edu</p>
+			<p><b>Website:</b> <a href="https://sites.google.com/view/dawei-zhou/home">website_link</a></p>
+        </div>
+    </div>
+	
+</div>
+	  
+	</section>
+	
+	<section id="organizers" class="organizers section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Organization Chair</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container_one">
+	  <div class="image-box">
+        <img src="assets/img/soh.jpg" alt="Dr. Beatrice Wan Yuan Soh">
+        <div class="caption">
+            <p>Dr. Beatrice Wan Yuan Soh</p>
+            <p><b>National University of Singapore</b></p>
+			<p><b>Email:</b> beatricesoh.nus@gmail.com</p>
+			<p><b>Website:</b> <a href="https://bwysoh.wixsite.com/sohlab">website_link</a></p>
+        </div>
+    </div>
+	  
+	  
+	  </div>
+
+    </section>
+	
+	<section id="organizers" class="organizers section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Publicity Chair</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container_one">
+	  <div class="image-box">
+        <img src="assets/img/adithya.jpeg" alt="Dr. Adithya Kulkarni">
+        <div class="caption">
+            <p>Dr. Adithya Kulkarni</p>
+            <p><b>Virginia Tech</b></p>
+			<p><b>Email:</b> aditkulk@vt.edu</p>
+			<p><b>Website:</b> <a href="https://kulkarniadithya.github.io">website_link</a></p>
+        </div>
+    </div>
+	  
+	  
+	  </div>
+
+    </section>
+	
+	<section id="sponsors" class="sponsors section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Workshop Sponsors</h2>
+        <p>Our workshop is sponsored by AIJ and Amazon.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container_sponsor">
+        <!-- <div class="row justify-content-between"> -->
+		<img src="assets/img/ARTINT_Logo2_c_highresolution.png" alt="AIJ" class="image">
+		<img src="assets/img/amazon.png" alt="Amazon"  class="image">
+		</div>
+
+      </div>
+
+    </section>
 
     <!-- Pricing Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
+	  
+	  <div class="container section-title" data-aos="fade-up">
+        <h2>COMMITTEE MEMBERS</h2>
+	</div>
+        <div class="table">
+		<div class="row">
+		<div class="cell">Adam Fisch (MIT)</div>
+		<div class="cell">Adithya Kulkarni (VT)</div>
+		<div class="cell">Ahana Gangopadhyay (WU in St.Louis)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Aishwarya Balwani (Georgia Tech)</div>
+		<div class="cell">Alexander Wettig (Princeton)</div>
+		<div class="cell">Aman Madaan (CMU)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Anna Hart (UIUC)</div>
+		<div class="cell">Asher Trockman (CMU)</div>
+		<div class="cell">Azmine Toushik Wasi (SUST)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Barry Menglong Yao (VT)</div>
+		<div class="cell">Benjamin L. Edelman (Harvard)</div>
+		<div class="cell">Benjamin Newman (UCR)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Charlie Victor Snell (UC Berkeley)</div>
+		<div class="cell">Christina Baek (UC Berkeley)</div>
+		<div class="cell">Collin Burns (Columbia)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Danai Koutra (U Mich.)</div>
+		<div class="cell">Daniel Y Fu (Stanford)</div>
+		<div class="cell">Dawei Zhou (VT)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Dingli Yu (Princeton)</div>
+		<div class="cell">Erik Jones (UC Berkeley)</div>
+		<div class="cell">Fatimah Alotaibi (VT)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Giorgio Giannone (Amazon)</div>
+		<div class="cell">Hanzi Xu (Temple)</div>
+		<div class="cell">Haokun Liu (UNC)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Haonan Duan (Univ. of Toronto)</div>
+		<div class="cell">Hongyi Liu (SJTU)</div>
+		<div class="cell">Hou Pong Chan (Alibaba)</div>
+		</div>
+		
+		
+		<div class="row">
+		<div class="cell">Hyeonjeong Ha (KAIST)</div>
+		<div class="cell">Ibraheem Moosa (PSU)</div>
+		<div class="cell">James Zou (Stanford)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Jiacheng Liu (UW)</div>
+		<div class="cell">Jiajie Li (UBuffalo)</div>
+		<div class="cell">Jianan Zhou (NTU Singapore)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Jiawei Ma (CUHK)</div>
+		<div class="cell">Jingling Li (UMD)</div>
+		<div class="cell">Kaiyuan Gao (HUST)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Kexin Huang (Stanford)</div>
+		<div class="cell">Kuan-Hao Huang (TAMU)</div>
+		<div class="cell">Lifu Huang (UC Davis)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Lijun Wu (ByteDance)</div>
+		<div class="cell">Longfeng Wu (VT)</div>
+		<div class="cell">Michael JQ Zhang (UT Austin)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Michael Poli (Stanford)</div>
+		<div class="cell">Mohna Chakraborty (U Mich.)</div>
+		<div class="cell">Odhran ODonoghue (Oxford)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Pascal Notin (Harvard Medical School)</div>
+		<div class="cell">Qi Zeng (Meta)</div>
+		<div class="cell">Qingyun Wu (PSU)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Reza Abbasi-Asl (UCSF)</div>
+		<div class="cell">Temiloluwa Prioleau (Dartmouth)</div>
+		<div class="cell">Tong Zeng (VT)</div>
+		</div>
+		<div class="row">
+		<div class="cell">Yaoqing Yang (Dartmouth)</div>
+		<div class="cell">Yujun Yan (Dartmouth)</div>
+		<div class="cell">Yusuf Roohani (Stanford)</div>
+		</div>
+		
+      </div>
+	  
       <div class="container section-title" data-aos="fade-up">
         <h2>CONTACT US</h2>
-        <p>You can contact us at aditkulk@vt.edu</p>
+        <p>For inquiries regarding the workshop, please reach out to us at  <a href="iclragenticai@googlegroups.com">iclragenticai@googlegroups.com</a>.</p>
       </div><!-- End Section Title -->
 
       <!-- <div class="container">
@@ -941,7 +1166,7 @@ ul li {
           <div class="col-lg-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt"></i>
-              <h3>Aliress</h3>
+              <h3>Address</h3>
               <p>A108 Adam Street, New York, NY 535022</p>
             </div>
           </div> --><!-- End Info Item -->
@@ -966,7 +1191,7 @@ ul li {
 
         <div class="row gy-4 mt-1">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; wilih: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div> --><!-- End Google Maps -->
 
           <!-- <div class="col-lg-6">
@@ -1068,7 +1293,7 @@ ul li {
     </div> -->
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>2024-2025</span> <strong class="px-1 sitename">AgenticAI 2025</strong><span>All Rights Reserved</span></p>
+      <p>© <span>2024-2025</span> <strong class="px-1 sitename">ICLR Agentic AI for Scientific Discovery Workshop 2025</strong><span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -1087,11 +1312,11 @@ ul li {
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bunule.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bunule.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
